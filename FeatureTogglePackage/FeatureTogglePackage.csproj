@@ -4,6 +4,20 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  <PackageId>Unique.Package.Name</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>Abdulvosid Foziljonov</Authors>
+	  <Company>RTM</Company>
+	  <Description>The FeatureToggleLibrary is a flexible and easy-to-use library designed to manage feature toggles in .NET applications. This library allows developers to enable or disable features dynamically without the need to modify the application code.</Description>
+	  <PackageTags>
+		  feature-toggle,
+		  feature-flag,
+		  in-memory-feature-toggle,
+		  feature-management,
+		  conditional-service,
+		  aspnet-core,
+		  toggle-library,
+	  </PackageTags>
   </PropertyGroup>
 
 </Project>
