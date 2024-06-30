@@ -1,6 +1,6 @@
 # FeatureToggle
 
-## The **FeatureToggleLibrary** is a flexible and easy-to-use library designed to manage feature toggles in .NET applications. This library enables developers to dynamically enable or disable features without modifying the application code. It's ideal for managing feature rollouts, conducting A/B testing, and controlling feature access based on different conditions.
+### The **FeatureToggleLibrary** is a flexible and easy-to-use library designed to manage feature toggles in .NET applications. This library enables developers to dynamically enable or disable features without modifying the application code. It's ideal for managing feature rollouts, conducting A/B testing, and controlling feature access based on different conditions.
 
 
 - isFeatureEnable(string featureName) - Checks whether a specific feature is enabled or not based on its featureName. Returns true if the feature is enabled, otherwise false
