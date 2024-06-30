@@ -19,7 +19,7 @@ dotnet add package FeatureToggle
 
 Author - Abdulvosid Foziljonov
 
-How to reach me - @abdulvosidfoziljonov55@gmail.com
+How to reach me - abdulvosidfoziljonov55@gmail.com
 
 
 
