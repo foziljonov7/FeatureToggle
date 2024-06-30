@@ -1,14 +1,33 @@
-﻿
-using FeatureToggleLibrary;
+﻿using FeatureToggleLibrary;
 
-InMemoryFeatureToggleService service = new InMemoryFeatureToggleService();
+IFeatureToggleService featureToggleService = new InMemoryFeatureToggleService();
 
-Console.Write("Feature ni kiriting: ");
-string feature = Console.ReadLine();
+string feature = "ProVersion";
 
-switch(feature)
-{
-    case "NewFeature": if(service.IsFeatureEnable("NewFeature")) Console.WriteLine("You NewFeature"); break;
-    case "BetaFeature": if(!service.IsFeatureEnable("BetaFeature")) Console.WriteLine("You BetaFeature"); break;
-}
+//Add a feature
+featureToggleService.AddFeature("ProVersion", true);
+featureToggleService.AddFeature("BetaVersion", false);
+
+//Check the feature
+if (featureToggleService.IsFeatureEnable(feature))
+    ProVersionMethod();
+else if (featureToggleService.IsFeatureEnable(feature))
+    BetaVersionMethod();
+else
+    Console.WriteLine("Feature not available");
+
+//Write the Pro version logic
+void ProVersionMethod()
+    => Console.WriteLine("Executing ProVersion feature method...");
+
+//Write the Beta version logic
+void BetaVersionMethod()
+    => Console.WriteLine("Executing BetaVersion feature method...");
+
+
+
+
+
+
+
 
